@@ -1,4 +1,4 @@
-preco =int(input('Preço do produto: '))
+preco =float(input('Preço do produto: R$ '))
 novo =preco*5/100
 vf = preco-novo
 
