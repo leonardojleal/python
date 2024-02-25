@@ -1,7 +1,6 @@
-aluno =input('Digite seu nome: ')
-n1 = int(input('Nota 1'))
-n2 = int(input('Nota 2'))
+n1 = float(input('Primeira nota do aluno: '))
+n2 = float(input('Segunda nota do aluno: '))
+m = (n1+n2)/2
 
+print('A média entre {:.1f} e {:.1f} é: {:.1f}'.format(n1,n2,m))
 
-print('Sua nota 1 foi {} e sua nota 2 foi {}'.format(n1,n2))
-print('A média entre as duas notas foi: {}'.format(len))
