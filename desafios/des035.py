@@ -10,6 +10,6 @@ b = float(input('Valor segunda reta: '))
 c = float(input('Valor terceira reta: '))   
 
 if verificar_triangulo(a, b, c):
-    print('As retas informadas podem forma um triângulo')
+    print('\033[1;32;40mAs retas informadas podem forma um triângulo\033[m')
 else:
-    print('As retas informadas não podem formar um triângulo')    
+    print('\033[1;31;40mAs retas informadas não podem formar um triângulo\033[m')    

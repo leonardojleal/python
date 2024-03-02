@@ -5,10 +5,10 @@ def bissexto(ano):
     else:
         return False
     
-ano = int(input('Que ano quer analisar? Coloque 0 para o ano atual: '))
+ano = int(input('\033[1;30;43mQue ano quer analisar? Coloque 0 para o ano atual: \033[m'))
 if ano == 0:
     ano = date.today().year
 if bissexto(ano):
-    print(f'O ano {ano} é bissexto.')
+    print(f'\033[1;32;40mO ano {ano} é bissexto.\033[m')
 else:
-    print(f'O ano {ano} não é bissexto.')   
+    print(f'\033[1;31;40mO ano {ano} não é bissexto.\033[m')   
