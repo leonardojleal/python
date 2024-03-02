@@ -21,4 +21,4 @@ else:
     print('Você tem {} anos, passou do tempo do alistamento militar!'.format(idade))  
     print('O seu alistamento passou {} ano(s) do prazo.'.format(passou))  
 
-print('-'*20, '\033[43m''Desenvolvido por Leonardo Leal''\033[m', '-'*20)    
+print('-'*10, '\033[43m''Desenvolvido por Leonardo Leal''\033[m', '-'*10,)    
