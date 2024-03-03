@@ -2,7 +2,7 @@
 peso = float(input('Qual o seu peso: (Kg) '))
 altura = float(input('Qual sua altura: (m) '))
 
-imc = peso / (altura ** 2)
+imc = peso / (altura ** 2) #calculo 
 
 #print('O seu ICM é de: {:.2f}'.format(icm)) - TESTANDO CALCULO
 
