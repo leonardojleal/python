@@ -13,14 +13,11 @@ while True:
     break
   elif perguntanum == '1' or perguntanum == '2' or perguntanum == '3':
     if perguntanum == '1':
-      rio = str(bin(numero))
-      print(rio)
+      print('{} convertido para BINÁRIO é igual a {}'.format(numero, bin(numero)[2:])) # [2:] serve para fatiar, irá aparecer do 3 indíce até o final
     elif perguntanum == '2':
-      cta = str(oct(numero))
-      print(cta)  
+      print('{} convertido para OCTAL é igual a {}'.format(numero, oct(numero)[2:]))  
     elif perguntanum == '3':
-      exa = str(hex(numero))
-      print(exa)  
+      print('{} convertido para HEXADECIMAL é igual a {}.'.format(numero, hex(numero)[2:]))
     else:
       print('Opção Inválida')  
      
