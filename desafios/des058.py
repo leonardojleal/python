@@ -2,16 +2,20 @@ import random
 from time import sleep
 
 numero_pensado = random.randint(0, 10) #faz o computador "PENSAR"
-
+acertou = False
 tentativas = 0
 
-while True:
-    tentativa = int(input('Digite um número: '))
+while not acertou:
+    jogador = int(input('Digite um número: '))
     print('PROCESSANDO...')
-    sleep(1)
+    sleep(0.8)
     tentativas += 1
 
-    if tentativas == numero_pensado:
-        print('\033[44mVocê acertou o número em {} tentativa(s). PARABÉNS!!!\033[m'.format(tentativas))
+    if jogador == numero_pensado:
+        acertou = True
     else:
-        print('\033[41mVocê errou, tente novamente.\033[m')
+        if jogador < numero_pensado:
+            print('Mais... Tente mais uma vez.')
+        elif jogador > numero_pensado:
+            print('Menos... Tente mais uma vez.')    
+print('Acertou com {} tentativas. Parabéns!'.format(tentativas))            

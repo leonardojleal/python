@@ -1,9 +1,5 @@
-sexo = str(input('Digite o seu sexo [F/M]: ')).upper()
+sexo = str(input('Digite o seu sexo [F/M]: ')).upper()[0].strip()
 
-while sexo == 'F' or sexo == 'M':
-    print('Obrigado por participar da campanha!')
-    break
-if sexo != 'F' or sexo != 'M':
-    sexo = str(input('Digite o seu sexo [F/M]: ')).upper()
-    print('Obrigado por participar da campanha!')
-print('FIM')   
+while sexo not in 'MmFf':
+    sexo = str(input('Dados inválidos. Por favor, informe seu sexo: ')).strip().upper()[0] # [0] serve para pegar a primeira letra 
+print('Sexo {} registrado com sucesso'.format(sexo))
