@@ -1,0 +1,13 @@
+times = ('Arsenal', 'Liverpool', 'Manchester City', 'Aston Villa', 'Tottenham', 'Manchester United', 'West Ham', 'Brighton', 'Wolverhampton', 'Newcastle', 'Chelsea', 'Fulham', 'Bournemouth', 'Crystal Palace', 'Brentford', 'Everton',  'Nottingham Forest', 'Luton Town', 'Burnley', 'Sheffield United')
+
+#print(times[:5])
+print('=' * 30)
+print(f'Lista de times do campeonato inglês: {times}')
+print('=' * 30)
+print(f'Os 5 primeiros times são: {times[:5]}')
+print('=' * 30)
+print(f'Os 4 últimos times são: {times[16:]}')
+print('=' * 30)
+print(f'Os times em ordem alfabética são: {sorted(times)}')
+print('=' * 30)
+print(times.index(1))
