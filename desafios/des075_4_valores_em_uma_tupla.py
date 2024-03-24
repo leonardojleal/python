@@ -1,9 +1,14 @@
-v1 = (input('Digite o primeiro valor: '))
-v2 = (input('Digite o segundo valor: '))
-v3 = (input('Digite o terceiro valor: '))
-v4 = (input('Digite o quarto valor: '))
+num = (int(input('Digite um número: ')), int(input('Digite outro número: ')), int(input('Digite outro número: ')), int(input('Digite mais número: ')))
 
-tot = tuple(v1 + v2 + v3 + v4)
 
-print(tot)
-print(f'O valor 9 apareceu {tot.count(9)} vezes.')
+
+print(f'Você digitou os valores {num}')
+print(f'O valor 9 apareceu {num.count(9)} vezes.')
+if 3 in num:
+   print(f'O valor 3 apareceu na {num.index(3)+1}ª posição')
+else:
+    print('O valor 3 não foi digitado em nenhuma posição.')
+print('Os valores pares digitados foram ', end= ' ')
+for n in num:
+    if n % 2 == 0:
+        print(n, end= ' ')

@@ -1,12 +1,18 @@
-listagem = ('Pão', 3, 'Leite', 4.50, 'Arroz', 9.30, 'Macarrão', 4.50, 'Molho', 3.50)
-
-lista_dados = [listagem]
-
-
-print("Produtos\t\tValores")
-print("-" * 30)  # Linha separadora
-
-for produto in lista_dados:
-    nome, valores = produto
-    print(f"{nome}\t{valores}")
-
+listagem = ('Lápis', 1.75,
+            'Borracha', 2,
+            'Caderno', 15.90,
+            'Estojo', 25,
+            'Transferidor', 4.20,
+            'Compasso', 9.99,
+            'Mochila', 120.32,
+            'Canetas', 22.20,
+            'Livro', 34.90)
+print('-' * 40)
+print(f'{"LISTAGEM DE PREÇOS":^40}')
+print('-' * 40)
+for pos in range(0, len(listagem)):
+    if pos % 2 == 0:
+       print(f'{listagem[pos]:.<30}', end= '')
+    else:
+        print(f'R${listagem[pos]:>7.2f}')
+print('-' * 40)        
